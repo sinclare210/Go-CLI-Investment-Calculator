@@ -22,6 +22,8 @@ func main() {
 
 	futureValue := investmentAmount * math.Pow((1+expectedReturnRate/100), years)
 	futureRealValue := futureValue / math.Pow((1+inflationRate/100), years)
-	fmt.Println(investmentAmount, expectedReturnRate, years, futureValue, futureRealValue)
+	
+	fmt.Println("Future value is ", futureValue)
+	fmt.Println("Future real valuse is ", futureRealValue)
 
 }
